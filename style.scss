@@ -1,15 +1,63 @@
+
+
 body{
 	margin: 0 auto;
 }
 
 header{
-	position: fixed;
-	width: 100%;
-	background-color: rgb(87,156,135);
+    font-family: 'Anton', sans-serif;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(87,156,135);
+    align-items: center;
+    display: flex;
+}
+
+.space{
+    height: 160px;
 }
 
 header h1{
 	text-align: center;
 	color: rgb(253,203,70);
-    font-size: 6em;
+    font-size: 5em;
+    margin: 0;
+    width: 100%;
+}
+
+.home{
+    
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 300px 100px 300px;
+    flex-wrap: wrap;
+}
+
+#menu{
+    background-color: grey;
+    height: 500px;
+    width: 40%;
+    align-items: center;
+    display: flex;
+}
+
+#menu.menu_ench{
+    background-color: rgb(252,223,219);
+}
+
+#menu.menu_chic, #menu.menu_deli, #menu.menu_pale{
+    background-color: rgb(255,232,253);
+}
+
+#menu_title{
+    width: 100%;
+    text-align: center;
+}
+
+.next{
+    position: absolute;
 }

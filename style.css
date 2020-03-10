@@ -3,14 +3,74 @@ body {
 }
 
 header {
+  font-family: 'Anton', sans-serif;
   position: fixed;
+  z-index: 4;
   width: 100%;
+  height: 160px;
   background-color: #579c87;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.space {
+  height: 160px;
 }
 
 header h1 {
   text-align: center;
   color: #fdcb46;
-  font-size: 6em;
+  font-size: 5em;
+  margin: 0;
+  width: 100%;
+}
+
+.home {
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 300px 100px 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#menu {
+  background-color: grey;
+  height: 500px;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu.menu_ench {
+  background-color: #fcdfdb;
+}
+
+#menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
+  background-color: #ffe8fd;
+}
+
+#menu_title {
+  width: 100%;
+  text-align: center;
+}
+
+.next {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
