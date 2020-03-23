@@ -1,3 +1,5 @@
+$green: #579c87;
+
 body {
     margin: 0 auto;
   }
@@ -12,7 +14,7 @@ body {
     z-index: 4;
     width: 100%;
     height: 160px;
-    background-color: #579c87;
+    background-color: $green;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -50,21 +52,25 @@ body {
   }
   
   #menu {
-    background-color: grey;
     height: 500px;
     width: 40%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  
-  #menu.menu_ench {
+    transform: scale(1);
+    transition: transform 1s;
     background-color: #fcdfdb;
-    color: black;
+    
+  &:hover #menu_title{
+        transform: scale(1.25);
+        transition: transform 0.7s; 
+        opacity: 1; 
+}
   }
+
   
   #menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
     background-color: #ffe8fd;
@@ -73,12 +79,13 @@ body {
   #menu_title {
     width: 100%;
     text-align: center;
+    opacity: 0.3;
   }
   
   .menu_title_ench p{
     color: #3c1218;
     font-family: 'Parisienne', cursive;
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
   
   .next {

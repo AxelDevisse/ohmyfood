@@ -50,7 +50,6 @@ header h1 {
 }
 
 #menu {
-  background-color: grey;
   height: 500px;
   width: 40%;
   -webkit-box-align: center;
@@ -59,11 +58,23 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  background-color: #fcdfdb;
 }
 
-#menu.menu_ench {
-  background-color: #fcdfdb;
-  color: black;
+#menu:hover #menu_title {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  opacity: 1;
 }
 
 #menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
@@ -73,12 +84,13 @@ header h1 {
 #menu_title {
   width: 100%;
   text-align: center;
+  opacity: 0.3;
 }
 
 .menu_title_ench p {
   color: #3c1218;
   font-family: 'Parisienne', cursive;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .next {
