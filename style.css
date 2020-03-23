@@ -2,10 +2,6 @@ body {
   margin: 0 auto;
 }
 
-.home a{
-  text-decoration: none;
-}
-
 header {
   font-family: 'Anton', sans-serif;
   position: fixed;
@@ -63,7 +59,6 @@ header h1 {
 
 #menu.menu_ench {
   background-color: #fcdfdb;
-  color: black;
 }
 
 #menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
@@ -75,46 +70,9 @@ header h1 {
   text-align: center;
 }
 
-.menu_title_ench p{
-  color: #3c1218;
-  font-family: 'Parisienne', cursive;
-  font-size: 1.3em;
-}
-
 .next {
-  margin: auto;
-  background-color: #579c87;
-  width: 200px;
   text-align: center;
-  height: 50px;
-  align-items: center;
-  border-radius: 5px;
-  justify-content: center;
-  display: flex;
 }
 
-.next a{
-  color: #fdcb46;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-footer{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-  background-color: #579c87;
-  height: 80px;
-  font-weight: bold;
-}
-
-footer a{
-  color: #fdcb46;
-  margin: auto;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
-
+ggg
 /*# sourceMappingURL=style.css.map */
