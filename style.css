@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
 }
 
-.home a{
+.home a {
   text-decoration: none;
 }
 
@@ -14,8 +14,8 @@ header {
   height: 160px;
   background-color: #579c87;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,14 +39,14 @@ header h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 100px 300px 100px 300px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #menu {
@@ -54,8 +54,8 @@ header h1 {
   height: 500px;
   width: 40%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ header h1 {
   text-align: center;
 }
 
-.menu_title_ench p{
+.menu_title_ench p {
   color: #3c1218;
   font-family: 'Parisienne', cursive;
   font-size: 1.3em;
@@ -87,34 +87,42 @@ header h1 {
   width: 200px;
   text-align: center;
   height: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.next a{
+.next a {
   color: #fdcb46;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-footer{
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 70px;
   background-color: #579c87;
   height: 80px;
   font-weight: bold;
 }
 
-footer a{
+footer a {
   color: #fdcb46;
   margin: auto;
   font-size: 1.5em;
   text-decoration: none;
 }
-
-
 /*# sourceMappingURL=style.css.map */
