@@ -1,0 +1,15 @@
+#top_page_header {
+    font-family: $roboto;
+    width: 100%;
+    height: 160px;
+    background-color: $color-primary;
+    align-items: center;
+    display: flex;
+         h1 {
+            text-align: center;
+            color: $color-secondary;
+            font-size: 5em;
+            margin: 0;
+            width: 100%;
+    }
+  }
