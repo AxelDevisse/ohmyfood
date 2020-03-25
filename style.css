@@ -27,7 +27,7 @@ header {
 
 header h1 {
   text-align: center;
-  color: #fdcb46;
+  color: red;
   font-size: 5em;
   margin: 0;
   width: 100%;
@@ -74,7 +74,7 @@ header h1 {
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 #menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
@@ -84,7 +84,7 @@ header h1 {
 #menu_title {
   width: 100%;
   text-align: center;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .menu_title_ench p {
@@ -93,7 +93,7 @@ header h1 {
   font-size: 1.4em;
 }
 
-.next {
+.btn {
   margin: auto;
   background-color: #579c87;
   width: 200px;
@@ -111,7 +111,7 @@ header h1 {
   display: flex;
 }
 
-.next a {
+.btn p {
   color: #fdcb46;
   text-decoration: none;
   font-size: 1.5em;
