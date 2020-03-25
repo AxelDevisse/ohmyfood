@@ -1,4 +1,5 @@
 $green: #579c87;
+$yellow: #fdcb46;
 
 body {
     margin: 0 auto;
@@ -29,7 +30,7 @@ body {
   
   header h1 {
     text-align: center;
-    color: #fdcb46;
+    color: black;
     font-size: 5em;
     margin: 0;
     width: 100%;
@@ -67,10 +68,9 @@ body {
   &:hover #menu_title{
         transform: scale(1.25);
         transition: transform 0.7s; 
-        opacity: 1; 
+        opacity: 0.5; 
 }
   }
-
   
   #menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
     background-color: #ffe8fd;
@@ -79,7 +79,7 @@ body {
   #menu_title {
     width: 100%;
     text-align: center;
-    opacity: 0.3;
+    opacity: 1;
   }
   
   .menu_title_ench p{
@@ -88,9 +88,9 @@ body {
     font-size: 1.4em;
   }
   
-  .next {
+  .btn {
     margin: auto;
-    background-color: #579c87;
+    background-color: $green;
     width: 200px;
     text-align: center;
     height: 50px;
@@ -100,8 +100,8 @@ body {
     display: flex;
   }
   
-  .next a{
-    color: #fdcb46;
+  .btn p{
+    color: $yellow;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
@@ -111,13 +111,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
-    background-color: #579c87;
+    background-color: $green;
     height: 80px;
     font-weight: bold;
   }
   
   footer a{
-    color: #fdcb46;
+    color: $yellow;
     margin: auto;
     font-size: 1.5em;
     text-decoration: none;
