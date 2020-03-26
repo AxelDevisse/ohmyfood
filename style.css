@@ -1,4 +1,4 @@
-footer {
+body > footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,13 +8,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 70px;
   background-color: #579c87;
   height: 100px;
   font-weight: bold;
 }
 
-footer a {
+body > footer a {
   color: #fdcb46;
   margin: auto;
   font-size: 1.5em;
@@ -106,9 +105,9 @@ body {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  background-color: #fcdfdb;
   -webkit-box-shadow: 5px 5px 15px grey;
           box-shadow: 5px 5px 15px grey;
+  background-color: #fcdfdb;
 }
 
 #menu:hover #menu_title {
@@ -131,11 +130,63 @@ body {
   opacity: 1;
 }
 
+.menu_home {
+  width: 100%;
+}
+
+.menu_content {
+  font-family: 'Dancing Script', cursive;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.menu_content p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.underline {
+  position: relative;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  text-decoration: none;
+  color: #3c1218;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3c1218;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .menu_title_ench {
   color: #3c1218;
 }
 
-.menu_title_ench :nth-child(1) {
+.menu_ench {
+  background-color: #fcdfdb;
+  width: 70%;
+}
+
+.menu_title_ench i {
   background-image: -webkit-gradient(linear, left top, right top, from(#d90f0f), to(#ffab2d));
   background-image: linear-gradient(to right, #d90f0f, #ffab2d);
   background-clip: text;
@@ -143,7 +194,31 @@ body {
   color: transparent;
 }
 
-.menu_title_ench :nth-child(2) {
+section.menu_home .menu_ench #menu_title i {
+  padding-top: 75px;
+}
+
+section.menu_home .menu_ench {
+  margin: 0 auto;
+}
+
+#end_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#end_menu i {
+  padding-right: 15px;
+}
+
+i + p {
   font-family: "Devonshire", sans-serif;
   font-size: 1.5em;
 }
