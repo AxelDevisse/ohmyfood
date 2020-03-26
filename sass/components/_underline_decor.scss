@@ -1,0 +1,51 @@
+.menu_content_title{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px -45px 30px -45px;
+}
+
+.line{
+    width: 30%;
+}
+
+.line_ench{
+    border-bottom: 5px solid #3c1218;
+}
+
+.line_ench.orange{
+  border-color: orange;
+}
+
+.underline{
+    position: relative;
+    margin-block-start: 0em;
+    text-decoration: none;
+    color: $color-brown;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .underline.orange{
+    color: orange;
+  }
+
+  .underline.orange:before{
+    background-color: orange;
+  }
+  
+    .underline:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-brown;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .underline:hover:before {
+    visibility: visible;
+    width: 100%;
+  }

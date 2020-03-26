@@ -1,3 +1,7 @@
+.space {
+  height: 160px;
+}
+
 body > footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,18 +147,13 @@ header a {
   width: 100%;
 }
 
-#single_menu_title h1 {
-  text-align: center;
-  margin-top: 100px;
-}
-
-#single_menu_ench {
-  margin-top: 100px;
-  width: 75%;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.menu_content_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px -45px 30px -45px;
 }
 
 .line {
@@ -165,13 +164,44 @@ header a {
   border-bottom: 5px solid #3c1218;
 }
 
-.menu_content_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 30px -45px 30px -45px;
+.line_ench.orange {
+  border-color: orange;
+}
+
+.underline {
+  position: relative;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  text-decoration: none;
+  color: #3c1218;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.underline.orange {
+  color: orange;
+}
+
+.underline.orange:before {
+  background-color: orange;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3c1218;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 .btn {
@@ -252,11 +282,8 @@ body {
   font-size: 1.5em;
 }
 
-.space {
-  height: 160px;
-}
-
 .container {
+  /* index */
   height: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +320,6 @@ body {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-box-shadow: 5px 5px 15px grey;
           box-shadow: 5px 5px 15px grey;
-  background-color: #fcdfdb;
 }
 
 .menu:hover .menu_content {
@@ -306,8 +332,26 @@ body {
   opacity: 0.5;
 }
 
-#menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
-  background-color: #ffe8fd;
+main h1 {
+  text-align: center;
+}
+
+.menu_start {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu_detail {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
 
 .menu_content {
@@ -317,10 +361,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.menu_home {
-  width: 100%;
 }
 
 .menu_content_detail {
@@ -338,36 +378,25 @@ body {
           justify-content: space-between;
 }
 
-.underline {
-  position: relative;
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
-  text-decoration: none;
-  color: #3c1218;
-  font-weight: bold;
-  font-size: 1.3em;
+.end_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #3c1218;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.underline:hover:before {
-  visibility: visible;
-  width: 100%;
+.end_menu i {
+  padding-right: 15px;
 }
 
 .menu_la_note_enchantee {
   color: #3c1218;
+  background-color: #fcdfdb;
 }
 
 .menu_ench {
@@ -383,67 +412,46 @@ i {
   color: transparent;
 }
 
-section.menu_home .menu_ench #menu_title i {
-  padding-top: 75px;
-}
-
-section.menu_home .menu_ench {
-  margin: 0 auto;
-}
-
-#end_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-#end_menu i {
-  padding-right: 15px;
-}
-
 i + p {
   font-family: "Devonshire", sans-serif;
   font-size: 1.5em;
 }
 
-.menu_title_chic {
-  color: #c77412;
+.menu_le_chic_a_la_francaise {
   font-family: "Croissant One", cursive;
 }
 
-.menu_title_chic :nth-child(1) {
+.menu_le_chic_a_la_francaise h2 {
   background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
   background-image: linear-gradient(to right, orange, #7012fc);
   background-clip: text;
+  font-size: 1em;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.menu_title_delic, .menu_title_palette {
+.menu_le_delice_des_papilles, .menu_la_palette_du_gout {
   font-family: "Dancing Script", cursive;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(#1b91fa));
-  background-image: linear-gradient(to right, #0431df, #1b91fa);
+  font-size: 1.3em;
+}
+
+.menu_le_delice_des_papilles p {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(white));
+  background-image: linear-gradient(to right, #0431df, white);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.menu_title_delic :nth-child(1), .menu_title_palette :nth-child(1) {
-  font-size: 1.7em;
-}
-
-.menu_title_palette {
+.menu_la_palette_du_gout p {
   background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(to right, #3d9339, #bfff7e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bold;
+}
+
+.orange {
+  color: orange;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,10 +2,8 @@
 @import "./sass/base/polices";
 @import "./sass/components/footer";
 @import "./sass/components/header";
-@import "./sass/components/single_menu_title";
-@import "./sass/components/single_menu_ench";
-@import "./sass/components/menu_page";
-@import "./sass/utils/btn";
+@import "./sass/components/underline_decor";
+@import "./sass/components/btn";
 
 body {
   margin: 0 auto;
@@ -13,11 +11,7 @@ body {
   font-size: 1.5em;
 }
 
-.space {
-  height: 160px;
-}
-
-.container {
+.container { /* index */
   height: 1500px;
   display: flex;
   align-items: center;
@@ -27,7 +21,7 @@ body {
   a{
     text-decoration: none;
   }
-} 
+}
 
 .menu {
   height: 500px;
@@ -37,8 +31,6 @@ body {
   transform: scale(1);
   transition: transform 1s;
   box-shadow: 5px 5px 15px grey;
-  background-color: #fcdfdb;
-  
   &:hover .menu_content{
     transform: scale(1.25);
     transition: transform 0.7s; 
@@ -46,8 +38,21 @@ body {
   }
 }
 
-#menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
-  background-color: #ffe8fd;
+main h1{
+  text-align: center;
+}
+
+.menu_start{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu_detail{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .menu_content{
@@ -55,11 +60,6 @@ body {
   text-align: center;
   opacity: 1;
   align-items: center;
-  
-}
-
-.menu_home{
-  width: 100%;
 }
 
 .menu_content_detail{
@@ -72,34 +72,18 @@ body {
   }
 }
 
-.underline{
-  position: relative;
-  margin-block-start: 0em;
-  text-decoration: none;
-  color: #3c1218;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-  .underline:before{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #3c1218;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.underline:hover:before {
-  visibility: visible;
-  width: 100%;
+.end_menu{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  i{
+    padding-right: 15px;
+  }
 }
 
 .menu_la_note_enchantee{
-  color: #3c1218;
+  color: $color-brown;
+  background-color: #fcdfdb;
 }
 
 .menu_ench{
@@ -114,57 +98,43 @@ i{
   color: transparent;
 }
 
-section.menu_home{
-  .menu_ench #menu_title i{
-    padding-top: 75px;
-  }
-  .menu_ench{
-    margin: 0 auto;
-  }
-}
-
-#end_menu{
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  i{
-    padding-right: 15px;
-  }
-}
-
 i + p{
   font-family: $devonshire;
   font-size: 1.5em;
 }
 
-.menu_title_chic{
-  color: rgb(199, 116, 18);
+.menu_le_chic_a_la_francaise{
   font-family: $croissant;
-  :nth-child(1){
+  h2{
     background-image: linear-gradient(to right, orange, rgb(112, 18, 252));
     background-clip: text;
+    font-size: 1em;
     -webkit-background-clip: text;
     color: transparent;
   }
 }
 
-.menu_title_delic, .menu_title_palette{
+.menu_le_delice_des_papilles, .menu_la_palette_du_gout{
   font-family: $dancing;
-  background-image: linear-gradient(to right, rgb(4,49,223), rgb(27,145,250));
+  font-size: 1.3em;
+}
+
+.menu_le_delice_des_papilles p{
+  background-image: linear-gradient(to right, rgb(4,49,223), white);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  :nth-child(1) {
-    font-size: 1.7em;
-  }
 }
 
-.menu_title_palette{
+.menu_la_palette_du_gout p{
   background-image: linear-gradient(to right, rgb(61,147,57), rgb(191, 255, 126));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bold;
+}
+
+.orange{
+  color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
