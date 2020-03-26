@@ -5,16 +5,12 @@
 @import "./sass/components/single_menu_title";
 @import "./sass/components/single_menu_ench";
 @import "./sass/components/menu_page";
+@import "./sass/utils/btn";
 
 body {
   margin: 0 auto;
   font-family: $roboto;
   font-size: 1.5em;
-}
-
-.menu{
-  font-size: 2em;
-  font-weight: bold;
 }
 
 .space {
@@ -33,7 +29,7 @@ body {
   }
 } 
 
-#menu {
+.menu {
   height: 500px;
   width: 40%;
   align-items: center;
@@ -43,7 +39,7 @@ body {
   box-shadow: 5px 5px 15px grey;
   background-color: #fcdfdb;
   
-  &:hover #menu_title{
+  &:hover .menu_content{
     transform: scale(1.25);
     transition: transform 0.7s; 
     opacity: 0.5; 
@@ -54,10 +50,11 @@ body {
   background-color: #ffe8fd;
 }
 
-#menu_title {
+.menu_content{
   width: 100%;
   text-align: center;
   opacity: 1;
+  align-items: center;
   
 }
 
@@ -65,7 +62,7 @@ body {
   width: 100%;
 }
 
-.menu_content{
+.menu_content_detail{
   font-family: 'Dancing Script', cursive;
   width: 70%;
   margin: 0 auto;
@@ -101,7 +98,7 @@ body {
   width: 100%;
 }
 
-.menu_title_ench {
+.menu_la_note_enchantee{
   color: #3c1218;
 }
 
@@ -110,7 +107,7 @@ body {
   width: 70%;
 }
 
-.menu_title_ench i{
+i{
   background-image: linear-gradient(to right, rgb(217,15,15), rgb(255,171,45));
   background-clip: text;
   -webkit-background-clip: text;
@@ -170,51 +167,4 @@ i + p{
   font-weight: bold;
 }
 
-.btn {
-  margin: auto;
-  background-color: $color-primary;
-  width: 300px;
-  text-align: center;
-  height: 50px;
-  align-items: center;
-  border-radius: 5px;
-  justify-content: center;
-  display: flex;
-  p{
-    color: $color-secondary;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-}
-
-.point{
-  color: $color-secondary;
-  font-size: 1.5em;
-  animation: 2s linear infinite blink;
-}
-
-.point:nth-of-type(2){
-  animation-delay: .2s;
-}
-
-.point:nth-of-type(3){
-  animation-delay: .4s;
-}
-
-@keyframes blink{
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-  
-}
 /*# sourceMappingURL=style.css.map */

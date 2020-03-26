@@ -174,209 +174,6 @@ header a {
   margin: 30px -45px 30px -45px;
 }
 
-body {
-  margin: 0 auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-}
-
-.menu {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.space {
-  height: 160px;
-}
-
-.container {
-  height: 1500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 100px 300px 100px 300px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.container a {
-  text-decoration: none;
-}
-
-#menu {
-  height: 500px;
-  width: 40%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-box-shadow: 5px 5px 15px grey;
-          box-shadow: 5px 5px 15px grey;
-  background-color: #fcdfdb;
-}
-
-#menu:hover #menu_title {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-  opacity: 0.5;
-}
-
-#menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
-  background-color: #ffe8fd;
-}
-
-#menu_title {
-  width: 100%;
-  text-align: center;
-  opacity: 1;
-}
-
-.menu_home {
-  width: 100%;
-}
-
-.menu_content {
-  font-family: 'Dancing Script', cursive;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.menu_content p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.underline {
-  position: relative;
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
-  text-decoration: none;
-  color: #3c1218;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #3c1218;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.underline:hover:before {
-  visibility: visible;
-  width: 100%;
-}
-
-.menu_title_ench {
-  color: #3c1218;
-}
-
-.menu_ench {
-  background-color: #fcdfdb;
-  width: 70%;
-}
-
-.menu_title_ench i {
-  background-image: -webkit-gradient(linear, left top, right top, from(#d90f0f), to(#ffab2d));
-  background-image: linear-gradient(to right, #d90f0f, #ffab2d);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-section.menu_home .menu_ench #menu_title i {
-  padding-top: 75px;
-}
-
-section.menu_home .menu_ench {
-  margin: 0 auto;
-}
-
-#end_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-#end_menu i {
-  padding-right: 15px;
-}
-
-i + p {
-  font-family: "Devonshire", sans-serif;
-  font-size: 1.5em;
-}
-
-.menu_title_chic {
-  color: #c77412;
-  font-family: "Croissant One", cursive;
-}
-
-.menu_title_chic :nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
-  background-image: linear-gradient(to right, orange, #7012fc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.menu_title_delic, .menu_title_palette {
-  font-family: "Dancing Script", cursive;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(#1b91fa));
-  background-image: linear-gradient(to right, #0431df, #1b91fa);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.menu_title_delic :nth-child(1), .menu_title_palette :nth-child(1) {
-  font-size: 1.7em;
-}
-
-.menu_title_palette {
-  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
-  background-image: linear-gradient(to right, #3d9339, #bfff7e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-}
-
 .btn {
   margin: auto;
   background-color: #579c87;
@@ -447,5 +244,206 @@ i + p {
   100% {
     opacity: 1;
   }
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+.space {
+  height: 160px;
+}
+
+.container {
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 300px 100px 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.menu {
+  height: 500px;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-box-shadow: 5px 5px 15px grey;
+          box-shadow: 5px 5px 15px grey;
+  background-color: #fcdfdb;
+}
+
+.menu:hover .menu_content {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  opacity: 0.5;
+}
+
+#menu.menu_chic, #menu.menu_deli, #menu.menu_pale {
+  background-color: #ffe8fd;
+}
+
+.menu_content {
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_home {
+  width: 100%;
+}
+
+.menu_content_detail {
+  font-family: 'Dancing Script', cursive;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.menu_content_detail p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.underline {
+  position: relative;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  text-decoration: none;
+  color: #3c1218;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3c1218;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.menu_la_note_enchantee {
+  color: #3c1218;
+}
+
+.menu_ench {
+  background-color: #fcdfdb;
+  width: 70%;
+}
+
+i {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d90f0f), to(#ffab2d));
+  background-image: linear-gradient(to right, #d90f0f, #ffab2d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.menu_home .menu_ench #menu_title i {
+  padding-top: 75px;
+}
+
+section.menu_home .menu_ench {
+  margin: 0 auto;
+}
+
+#end_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#end_menu i {
+  padding-right: 15px;
+}
+
+i + p {
+  font-family: "Devonshire", sans-serif;
+  font-size: 1.5em;
+}
+
+.menu_title_chic {
+  color: #c77412;
+  font-family: "Croissant One", cursive;
+}
+
+.menu_title_chic :nth-child(1) {
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
+  background-image: linear-gradient(to right, orange, #7012fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu_title_delic, .menu_title_palette {
+  font-family: "Dancing Script", cursive;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(#1b91fa));
+  background-image: linear-gradient(to right, #0431df, #1b91fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu_title_delic :nth-child(1), .menu_title_palette :nth-child(1) {
+  font-size: 1.7em;
+}
+
+.menu_title_palette {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background-image: linear-gradient(to right, #3d9339, #bfff7e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
