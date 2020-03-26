@@ -1,9 +1,10 @@
 @import "./sass/utils/variables";
 @import "./sass/base/polices";
 @import "./sass/components/footer";
-@import "./sass/components/top_page_header";
+@import "./sass/components/header";
 @import "./sass/components/single_menu_title";
 @import "./sass/components/single_menu_ench";
+@import "./sass/components/menu_page";
 
 body {
   margin: 0 auto;
@@ -20,7 +21,7 @@ body {
   height: 160px;
 }
 
-.home {
+.container {
   height: 1500px;
   display: flex;
   align-items: center;
