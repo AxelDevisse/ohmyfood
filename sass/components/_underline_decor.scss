@@ -16,11 +16,35 @@
   border-color: orange;
 }
 
+.line_ench.pink{
+  border-color: $color-pink;
+}
+
+.line_ench.violet{
+  border-color: $color-violet;
+}
+
+.line_ench.blue1{
+  border-color: $color-blue1;
+}
+
+.line_ench.blue2{
+  border-color: $color-blue2;
+}
+
+.line_ench.blue3{
+  border-color: $color-blue3;
+}
+
+.line_ench.green{
+  border-color: $color-green;
+}
+
 .underline{
     position: relative;
     margin-block-start: 0em;
     text-decoration: none;
-    color: $color-brown;
+    color: black;
     font-weight: bold;
     font-size: 1.3em;
   }
@@ -29,8 +53,36 @@
     color: orange;
   }
 
+  .underline.pink{
+    color: $color-pink;
+  }
+
+  .underline.violet{
+    color: $color-violet;
+  }
+
   .underline.orange:before{
     background-color: orange;
+  }
+
+  .underline.pink:before{
+    background-color: $color-pink;
+  }
+
+  .underline.violet:before{
+    background-color: $color-violet;
+  }
+
+  .underline.blue1:before{
+    background-color: $color-blue1;
+  }
+
+  .underline.blue2:before{
+    background-color: $color-blue2;
+  }
+
+  .underline.black:before{
+    background-color: black;
   }
   
     .underline:before{
