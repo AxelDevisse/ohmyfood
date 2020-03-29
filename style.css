@@ -193,6 +193,16 @@ header a {
   border-color: #3d9339;
 }
 
+.line.green.left_to_right {
+  border-image-source: linear-gradient(to right, #3d9339, #bfff7e);
+  border-image-slice: 1;
+}
+
+.line.green.right_to_left {
+  border-image-source: linear-gradient(to right, #bfff7e, #3d9339);
+  border-image-slice: 1;
+}
+
 .underline {
   position: relative;
   -webkit-margin-before: 0em;
@@ -335,7 +345,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 100px 300px 100px 300px;
+  margin: 10%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

@@ -38,6 +38,14 @@
 
   &.green {
     border-color: $color-green;
+    &.left_to_right{
+      border-image-source: linear-gradient(to right, rgb(61,147,57), rgb(191, 255, 126));
+      border-image-slice: 1;
+    }
+    &.right_to_left{
+      border-image-source: linear-gradient(to right, rgb(191, 255, 126), rgb(61,147,57));
+      border-image-slice: 1;
+    }
   }
 }
 
