@@ -158,37 +158,38 @@ header a {
 
 .line {
   width: 30%;
-}
-
-.line_ench {
   border-bottom: 5px solid #3c1218;
 }
 
-.line_ench.orange {
+.line.orange {
   border-color: orange;
 }
 
-.line_ench.pink {
+.line.pink {
   border-color: #a56999;
 }
 
-.line_ench.violet {
+.line.violet {
   border-color: #6e4ccc;
 }
 
-.line_ench.blue1 {
+.line.violet {
+  border-color: #6e4ccc;
+}
+
+.line.blue1 {
   border-color: #000fa9;
 }
 
-.line_ench.blue2 {
+.line.blue2 {
   border-color: #0f25ff;
 }
 
-.line_ench.blue3 {
+.line.blue3 {
   border-color: #4556ff;
 }
 
-.line_ench.green {
+.line.green {
   border-color: #3d9339;
 }
 
@@ -200,18 +201,6 @@ header a {
   color: black;
   font-weight: bold;
   font-size: 1.3em;
-}
-
-.underline.orange {
-  color: orange;
-}
-
-.underline.pink {
-  color: #a56999;
-}
-
-.underline.violet {
-  color: #6e4ccc;
 }
 
 .underline.orange:before {
@@ -494,12 +483,11 @@ i + p {
 
 .menu_le_delice_des_papilles, .menu_la_palette_du_gout {
   font-family: "Dancing Script", cursive;
-  font-size: 1.3em;
 }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(white));
-  background-image: linear-gradient(to right, #0431df, white);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0505fe), to(#a3a3fe));
+  background-image: linear-gradient(to right, #0505fe, #a3a3fe);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -1,103 +1,92 @@
-.menu_content_title{
-    display: flex;
-    justify-content: space-around;
-    margin: 30px -45px 30px -45px;
+.menu_content_title {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px -45px 30px -45px;
 }
 
-.line{
-    width: 30%;
+.line {
+  width: 30%;
+  border-bottom: 5px solid #3c1218;
+
+  &.orange {
+    border-color: orange;
+  }
+
+  &.pink {
+    border-color: $color-pink;
+  }
+
+  &.violet {
+    border-color: $color-violet;
+  }
+
+  &.violet {
+    border-color: $color-violet;
+  }
+
+  &.blue1 {
+    border-color: $color-blue1;
+  }
+
+  &.blue2 {
+    border-color: $color-blue2;
+  }
+
+  &.blue3 {
+    border-color: $color-blue3;
+  }
+
+  &.green {
+    border-color: $color-green;
+  }
 }
 
-.line_ench{
-    border-bottom: 5px solid #3c1218;
+.underline {
+  position: relative;
+  margin-block-start: 0em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
-.line_ench.orange{
-  border-color: orange;
+.underline.orange:before {
+  background-color: orange;
 }
 
-.line_ench.pink{
-  border-color: $color-pink;
+.underline.pink:before {
+  background-color: $color-pink;
 }
 
-.line_ench.violet{
-  border-color: $color-violet;
+.underline.violet:before {
+  background-color: $color-violet;
 }
 
-.line_ench.blue1{
-  border-color: $color-blue1;
+.underline.blue1:before {
+  background-color: $color-blue1;
 }
 
-.line_ench.blue2{
-  border-color: $color-blue2;
+.underline.blue2:before {
+  background-color: $color-blue2;
 }
 
-.line_ench.blue3{
-  border-color: $color-blue3;
+.underline.black:before {
+  background-color: black;
 }
 
-.line_ench.green{
-  border-color: $color-green;
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-brown;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-.underline{
-    position: relative;
-    margin-block-start: 0em;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-
-  .underline.orange{
-    color: orange;
-  }
-
-  .underline.pink{
-    color: $color-pink;
-  }
-
-  .underline.violet{
-    color: $color-violet;
-  }
-
-  .underline.orange:before{
-    background-color: orange;
-  }
-
-  .underline.pink:before{
-    background-color: $color-pink;
-  }
-
-  .underline.violet:before{
-    background-color: $color-violet;
-  }
-
-  .underline.blue1:before{
-    background-color: $color-blue1;
-  }
-
-  .underline.blue2:before{
-    background-color: $color-blue2;
-  }
-
-  .underline.black:before{
-    background-color: black;
-  }
-  
-    .underline:before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: $color-brown;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .underline:hover:before {
-    visibility: visible;
-    width: 100%;
-  }
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}

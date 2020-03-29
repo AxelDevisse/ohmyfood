@@ -124,11 +124,10 @@ i + p{
 
 .menu_le_delice_des_papilles, .menu_la_palette_du_gout{
   font-family: $dancing;
-  font-size: 1.3em;
 }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3{
-  background-image: linear-gradient(to right, rgb(4,49,223), white);
+  background-image: linear-gradient(to right, rgb(5,5,254), rgb(163,163,254));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
