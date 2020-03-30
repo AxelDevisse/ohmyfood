@@ -1,12 +1,13 @@
 .menu_content_title {
   display: flex;
-  .link-background{
-    width: 400px;
+  margin-top: 10%;
+  .link-background {
     text-align: center;
+    position: relative;
   }
 }
 
-.line{
+.line {
   width: 50%;
   border-bottom: 5px solid #3c1218;
   margin: 2%;
@@ -41,24 +42,26 @@
 
   &.green {
     border-color: $color-green;
-    &.left_to_right{
-      border-image-source: linear-gradient(to right, rgb(61,147,57), rgb(191, 255, 126));
+
+    &.left_to_right {
+      border-image-source: linear-gradient(to right, rgb(61, 147, 57), rgb(191, 255, 126));
       border-image-slice: 1;
     }
-    &.right_to_left{
-      border-image-source: linear-gradient(to right, rgb(191, 255, 126), rgb(61,147,57));
+
+    &.right_to_left {
+      border-image-source: linear-gradient(to right, rgb(191, 255, 126), rgb(61, 147, 57));
       border-image-slice: 1;
     }
   }
 }
 
 .underline {
-  position: relative;
   margin-block-start: 0em;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.3em;
+  width: 100%;
+  font-size: 1.2em;
 }
 
 .underline.orange:before {

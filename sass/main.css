@@ -28,8 +28,6 @@ body > footer a {
 footer a:hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes shake {
@@ -158,11 +156,12 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10%;
 }
 
 .menu_content_title .link-background {
-  width: 400px;
   text-align: center;
+  position: relative;
 }
 
 .line {
@@ -214,13 +213,13 @@ header a {
 }
 
 .underline {
-  position: relative;
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.3em;
+  width: 100%;
+  font-size: 1.2em;
 }
 
 .underline.orange:before {
@@ -269,8 +268,8 @@ header a {
   margin: auto;
   margin-top: 80px;
   background-color: #579c87;
+  color: #fdcb46;
   width: 300px;
-  text-align: center;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -285,14 +284,11 @@ header a {
 }
 
 .btn p {
-  color: #fdcb46;
-  text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
 }
 
 .point {
-  color: #fdcb46;
   font-size: 1.5em;
   -webkit-animation: 2s linear infinite blink;
           animation: 2s linear infinite blink;
@@ -341,7 +337,7 @@ header a {
 body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 @media all and (max-width: 560px) {
@@ -362,7 +358,6 @@ main {
 }
 
 .container {
-  /* index */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,10 +390,6 @@ main {
   display: flex;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
   -webkit-box-shadow: 5px 5px 15px grey;
           box-shadow: 5px 5px 15px grey;
 }
@@ -406,10 +397,6 @@ main {
 .menu:hover .menu_content {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
   opacity: 0.5;
 }
 
@@ -417,6 +404,21 @@ main {
   .menu {
     height: 250px;
   }
+}
+
+.menu_content {
+  width: 100%;
+  opacity: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.menu_content h3 {
+  font-size: 2em;
 }
 
 main h1 {
@@ -427,6 +429,11 @@ main h1 {
 .menu_start {
   text-align: center;
   padding-top: 50px;
+}
+
+.menu_start h2 {
+  font-size: 2em;
+  margin-bottom: 0px;
 }
 
 .menu_detail {
@@ -448,20 +455,11 @@ main h1 {
   }
 }
 
-.menu_content {
-  width: 100%;
-  opacity: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
 .menu_content_detail {
-  font-family: 'Dancing Script', cursive;
   width: 70%;
   margin: 0 auto;
   margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu_content_detail p {
@@ -505,10 +503,15 @@ main h1 {
 .menu_la_note_enchantee {
   color: #3c1218;
   background-color: #fcdfdb;
+  font-family: 'Caveat', cursive;
 }
 
 .menu_la_note_enchantee h2 {
   font-family: "Devonshire", sans-serif;
+}
+
+.menu_la_note_enchantee .menu_content_detail {
+  font-family: "Caveat", cursive;
 }
 
 .menu_ench {
@@ -537,17 +540,21 @@ i + p {
   background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
   background-image: linear-gradient(to right, orange, #7012fc);
   background-clip: text;
-  font-size: 1em;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .menu_le_chic_a_la_francaise h3 {
   color: orange;
+  font-size: 2em;
 }
 
 .menu_le_delice_des_papilles, .menu_la_palette_du_gout {
   font-family: "Dancing Script", cursive;
+}
+
+.menu_le_delice_des_papilles .menu_content_detail, .menu_la_palette_du_gout .menu_content_detail {
+  font-family: "Caveat", cursive;
 }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3 {
@@ -577,4 +584,4 @@ i + p {
 .violet {
   color: #6e4ccc;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

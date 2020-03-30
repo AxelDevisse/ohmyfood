@@ -1,17 +1,18 @@
-@import "./sass/utils/variables";
-@import "./sass/base/polices";
-@import "./sass/components/footer";
-@import "./sass/components/header";
-@import "./sass/components/underline_decor";
-@import "./sass/components/btn";
+@import "./abstracts/variables";
+
+@import "./base/polices";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./components/underline_decor";
+@import "./components/btn";
 
 body {
   margin: 0 auto;
   font-family: $roboto;
-  font-size: 1.5em;
-
-  @media all and (max-width: 560px)
-  {
+  font-size: 1.3em;
+  @media all and (max-width: 560px){
     font-size: 1em;
   }
 }
@@ -24,7 +25,7 @@ main{
   }
 }
 
-.container { /* index */
+.container { 
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -42,16 +43,25 @@ main{
   align-items: center;
   display: flex;
   transform: scale(1);
-  transition: transform 1s;
   box-shadow: 5px 5px 15px grey;
   &:hover .menu_content{
     transform: scale(1.1);
-    transition: transform 0.7s; 
     opacity: 0.5; 
   }
   @media all and (max-width: 560px)
   {
     height: 250px;
+  }
+}
+
+.menu_content{
+  width: 100%;
+  opacity: 1;
+  align-items: center;
+  text-align: center;
+  transition: all 0.7s;
+  h3{
+    font-size: 2em;
   }
 }
 
@@ -63,6 +73,10 @@ main h1{
 .menu_start{
   text-align: center;
   padding-top: 50px;
+  h2{
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
 }
 
 .menu_detail{
@@ -71,31 +85,22 @@ main h1{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  @media all and (max-width: 560px)
-  {
+  @media all and (max-width: 560px){
     width: 90%;
   }
 }
 
-.menu_content{
-  width: 100%;
-  opacity: 1;
-  align-items: center;
-  text-align: center;
-}
-
 .menu_content_detail{
-  font-family: 'Dancing Script', cursive;
   width: 70%;
   margin: 0 auto;
   margin-bottom: 7%;
+  font-family: $roboto;
   p{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  @media all and (max-width: 560px)
-  {
+  @media all and (max-width: 560px){
     width: 90%;
   }
 }
@@ -116,8 +121,12 @@ main h1{
 .menu_la_note_enchantee{
   color: $color-brown;
   background-color: #fcdfdb;
+  font-family: 'Caveat', cursive;
   h2{
     font-family: $devonshire;
+  }
+  .menu_content_detail{
+    font-family: $caveat;
   }
 }
 
@@ -143,17 +152,20 @@ i + p{
   h2{
     background-image: linear-gradient(to right, orange, rgb(112, 18, 252));
     background-clip: text;
-    font-size: 1em;
     -webkit-background-clip: text;
     color: transparent;
   }
   h3{
     color: orange;
+    font-size: 2em;
   }
 }
 
 .menu_le_delice_des_papilles, .menu_la_palette_du_gout{
   font-family: $dancing;
+  .menu_content_detail{
+    font-family: $caveat;
+  }
 }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3{
