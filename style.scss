@@ -9,22 +9,35 @@ body {
   margin: 0 auto;
   font-family: $roboto;
   font-size: 1.5em;
+
+  @media all and (max-width: 560px)
+  {
+    font-size: 1em;
+  }
+}
+
+main{
+  width: 70%;
+  margin: auto;
+  @media all and (max-width: 1280px){
+    width: 100%;
+  }
 }
 
 .container { /* index */
-  height: 1500px;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
-  margin: 10%;
-  flex-wrap: wrap; 
+  justify-content: space-evenly;
   a{
     text-decoration: none;
+    margin-top: 10%;
+    width: 40%;
   }
 }
 
 .menu {
-  height: 500px;
+  height: 400px;
   width: 40%;
   align-items: center;
   display: flex;
@@ -35,6 +48,10 @@ body {
     transform: scale(1.1);
     transition: transform 0.7s; 
     opacity: 0.5; 
+  }
+  @media all and (max-width: 560px)
+  {
+    height: 250px;
   }
 }
 
@@ -54,13 +71,17 @@ main h1{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  @media all and (max-width: 560px)
+  {
+    width: 90%;
+  }
 }
 
 .menu_content{
   width: 100%;
-  text-align: center;
   opacity: 1;
   align-items: center;
+  text-align: center;
 }
 
 .menu_content_detail{
@@ -71,7 +92,16 @@ main h1{
   p{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
+  @media all and (max-width: 560px)
+  {
+    width: 90%;
+  }
+}
+
+.price{
+  padding-left: 5%;
 }
 
 .end_menu{

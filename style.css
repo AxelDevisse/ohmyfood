@@ -15,6 +15,7 @@ body > footer {
   background-color: #579c87;
   height: 100px;
   font-weight: bold;
+  text-align: center;
 }
 
 body > footer a {
@@ -147,18 +148,27 @@ header a {
   width: 100%;
 }
 
+@media all and (max-width: 560px) {
+  header a {
+    font-size: 3em;
+  }
+}
+
 .menu_content_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 30px -45px 30px -45px;
+}
+
+.menu_content_title .link-background {
+  width: 400px;
+  text-align: center;
 }
 
 .line {
-  width: 30%;
+  width: 50%;
   border-bottom: 5px solid #3c1218;
+  margin: 2%;
 }
 
 .line.orange {
@@ -257,6 +267,7 @@ header a {
 
 .btn {
   margin: auto;
+  margin-top: 80px;
   background-color: #579c87;
   width: 300px;
   text-align: center;
@@ -333,29 +344,48 @@ body {
   font-size: 1.5em;
 }
 
+@media all and (max-width: 560px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+@media all and (max-width: 1280px) {
+  main {
+    width: 100%;
+  }
+}
+
 .container {
   /* index */
-  height: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 10%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .container a {
   text-decoration: none;
+  margin-top: 10%;
+  width: 40%;
 }
 
 .menu {
-  height: 500px;
+  height: 400px;
   width: 40%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -383,6 +413,12 @@ body {
   opacity: 0.5;
 }
 
+@media all and (max-width: 560px) {
+  .menu {
+    height: 250px;
+  }
+}
+
 main h1 {
   text-align: center;
   margin: 50px;
@@ -406,13 +442,19 @@ main h1 {
   margin: 0 auto;
 }
 
+@media all and (max-width: 560px) {
+  .menu_detail {
+    width: 90%;
+  }
+}
+
 .menu_content {
   width: 100%;
-  text-align: center;
   opacity: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .menu_content_detail {
@@ -429,6 +471,19 @@ main h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 560px) {
+  .menu_content_detail {
+    width: 90%;
+  }
+}
+
+.price {
+  padding-left: 5%;
 }
 
 .end_menu {
