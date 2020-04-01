@@ -213,8 +213,6 @@ header a {
 }
 
 .underline {
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -522,7 +520,7 @@ main h1 {
 i {
   background-image: -webkit-gradient(linear, left top, right top, from(#d90f0f), to(#ffab2d));
   background-image: linear-gradient(to right, #d90f0f, #ffab2d);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
