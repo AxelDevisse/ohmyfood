@@ -1,0 +1,197 @@
+@import "./abstracts/variables";
+
+@import "./base/polices";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./components/underline_decor";
+@import "./components/btn";
+
+body {
+  margin: 0 auto;
+  font-family: $roboto;
+  font-size: 1.3em;
+  @media all and (max-width: 560px){
+    font-size: 1em;
+  }
+}
+
+main{
+  width: 70%;
+  margin: auto;
+  @media all and (max-width: 1280px){
+    width: 100%;
+  }
+}
+
+.container { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  a{
+    text-decoration: none;
+    margin-top: 10%;
+    width: 40%;
+  }
+}
+
+.menu {
+  height: 400px;
+  width: 40%;
+  align-items: center;
+  display: flex;
+  transform: scale(1);
+  box-shadow: 5px 5px 15px grey;
+  &:hover .menu_content{
+    transform: scale(1.1);
+    opacity: 0.6; 
+  }
+  @media all and (max-width: 560px)
+  {
+    height: 250px;
+  }
+}
+
+.menu_content{
+  width: 100%;
+  opacity: 1;
+  align-items: center;
+  text-align: center;
+  transition: all 0.7s;
+  h3{
+    font-size: 2em;
+  }
+}
+
+main h1{
+  text-align: center;
+  margin: 50px;
+}
+
+.menu_start{
+  text-align: center;
+  padding-top: 50px;
+  h2{
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
+}
+
+.menu_detail{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media all and (max-width: 560px){
+    width: 90%;
+  }
+}
+
+.menu_content_detail{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 7%;
+  font-family: $roboto;
+  p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media all and (max-width: 560px){
+    width: 90%;
+  }
+}
+
+.price{
+  padding-left: 5%;
+}
+
+.end_menu{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  i{
+    padding-right: 15px;
+  }
+}
+
+.menu_la_note_enchantee{
+  color: $color-brown;
+  background-color: #fcdfdb;
+  font-family: 'Caveat', cursive;
+  h2{
+    font-family: $devonshire;
+  }
+  .menu_content_detail{
+    font-family: $caveat;
+  }
+}
+
+.menu_ench{
+  background-color: #fcdfdb;
+  width: 70%;
+}
+
+i{
+  background-image: linear-gradient(to right, rgb(217,15,15), rgb(255,171,45));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+i + p{
+  font-family: $devonshire;
+  font-size: 1.5em;
+}
+
+.menu_le_chic_a_la_francaise{
+  font-family: $croissant;
+  h2{
+    background-image: linear-gradient(to right, orange, rgb(112, 18, 252));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  h3{
+    color: orange;
+    font-size: 2em;
+  }
+}
+
+.menu_le_delice_des_papilles, .menu_la_palette_du_gout{
+  font-family: $dancing;
+  .menu_content_detail{
+    font-family: $caveat;
+  }
+}
+
+.menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3{
+  background-image: linear-gradient(to right, rgb(5,5,254), rgb(163,163,254));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu_la_palette_du_gout h2, .menu_la_palette_du_gout h3{
+  background-image: linear-gradient(to right, rgb(61,147,57), rgb(191, 255, 126));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.orange{
+  color: orange;
+}
+
+.pink{
+  color: $color-pink;
+}
+
+.violet{
+  color: $color-violet;
+}
+
+/*# sourceMappingURL=style.css.map */

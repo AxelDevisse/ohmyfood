@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang=fr>
-	<head>
-		<meta charset="utf-8" />
-        <meta name=viewport content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bienvenur chez ohmyfood, l'app qui vous fait gagner du temps au restaurant !">
-        <title>OHMYFOOD</title>
-        <link rel="stylesheet" href=style.css />
-		<script src="https://kit.fontawesome.com/2f279c21f8.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto|Sriracha&display=swap" rel="stylesheet"> 
- 
-	</head>
 
-	<body>
-		<header>
-			<h1>ohmyfood</h1>
-		</header>
+<head>
+	<meta charset="utf-8" />
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bienvenur chez ohmyfood, l'app qui vous fait gagner du temps au restaurant !">
+	<title>OHMYFOOD</title>
+	<link rel="stylesheet" href=sass/main.css>
+	<script src="https://kit.fontawesome.com/2f279c21f8.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kaushan+Script|Noto+Serif|Roboto|Sriracha&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
 
-		<div class="space"></div>
+<body>
+	<header>
+		<a href="index.html">ohmyfood</a>
+	</header>
 
-		<section class="home">
-			
-			<a href="page1.html" id="menu" class="menu_ench">
-				<div id="menu_title" class="menu_title_ench">
+	<main>
+
+		<section class="container">
+
+			<a href="./pages/menu1.html" class="menu menu_la_note_enchantee">
+				<div class="menu_content">
 					<i class="fas fa-music fa-2x"></i>
-					<p>La note enchantée</p>
-					<p>MENU</p>
+					<h2>La note enchantée</h2>
+					<h3>Menu</h3>
 				</div>
 			</a>
-			<a href="page2.html" id="menu" class="menu_chic">
-				<div id="menu_title" class="menu_title_chic">
-					<p>Le chic à la française</p>
-					<p>Menu</p>
+
+			<a href="./pages/menu2.html" class="menu menu_le_chic_a_la_francaise">
+				<div class="menu_content">
+					<h2>Le chic à la Française</h2>
+					<h3>Menu</h3>
 				</div>
 			</a>
-			<a href="page3.html" id="menu" class="menu_deli">
-				<div id="menu_title" class="menu_title_delic">
-					<p>Le délice des papilles</p>
-					<p>Menu</p>
+
+			<a href="./pages/menu3.html" class="menu menu_le_delice_des_papilles">
+				<div class="menu_content">
+					<h2>Le délice des papilles</h2>
+					<h3>Menu</h3>
 				</div>
 			</a>
-			<a href="page4.html" id="menu" class="menu_pale">
-				<div id="menu_title" class="menu_title_palette">
-					<p>La palette du goût</p>
-					<p>Menu</p>
+
+			<a href="./pages/menu4.html" class="menu menu_la_palette_du_gout">
+				<div class="menu_content">
+					<h2>La palette du goût</h2>
+					<h3>Menu</h3>
 				</div>
 			</a>
-			
+
 		</section>
 
-		<div class="next">
-			<a href="#">Prochainement</a>
+		<div class="btn">
+			<p>Prochainement</p>
+			<span class="point">.</span>
+			<span class="point">.</span>
+			<span class="point">.</span>
 		</div>
 
-		<footer>
-			<a href="#">Mentions légales</a>
-			<a href="#">Contactez nous</a>
-		</footer>
-	</body>
+	</main>
+
+	<div class="space"></div>
+
+	<footer>
+		<a href="./pages/mention.html">Mentions légales</a>
+		<a href="mailto:axeldevisse@gmail.com">Contactez nous</a>
+	</footer>
+</body>
+
 </html>

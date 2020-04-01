@@ -1,0 +1,106 @@
+.menu_content_title {
+  display: flex;
+  margin-top: 10%;
+  .link-background {
+    text-align: center;
+    position: relative;
+  }
+}
+
+.line {
+  width: 50%;
+  border-bottom: 5px solid #3c1218;
+  margin: 2%;
+
+  &.orange {
+    border-color: orange;
+  }
+
+  &.pink {
+    border-color: $color-pink;
+  }
+
+  &.violet {
+    border-color: $color-violet;
+  }
+
+  &.violet {
+    border-color: $color-violet;
+  }
+
+  &.blue1 {
+    border-color: $color-blue1;
+  }
+
+  &.blue2 {
+    border-color: $color-blue2;
+  }
+
+  &.blue3 {
+    border-color: $color-blue3;
+  }
+
+  &.green {
+    border-color: $color-green;
+
+    &.left_to_right {
+      border-image-source: linear-gradient(to right, rgb(61, 147, 57), rgb(191, 255, 126));
+      border-image-slice: 1;
+    }
+
+    &.right_to_left {
+      border-image-source: linear-gradient(to right, rgb(191, 255, 126), rgb(61, 147, 57));
+      border-image-slice: 1;
+    }
+  }
+}
+
+.underline {
+  margin-block-start: 0em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.underline.orange:before {
+  background-color: orange;
+}
+
+.underline.pink:before {
+  background-color: $color-pink;
+}
+
+.underline.violet:before {
+  background-color: $color-violet;
+}
+
+.underline.blue1:before {
+  background-color: $color-blue1;
+}
+
+.underline.blue2:before {
+  background-color: $color-blue2;
+}
+
+.underline.black:before {
+  background-color: black;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-brown;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
