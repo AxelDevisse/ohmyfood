@@ -137,6 +137,7 @@ main h1{
 
 i{
   background-image: linear-gradient(to right, rgb(217,15,15), rgb(255,171,45));
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -150,7 +151,7 @@ i + p{
   font-family: $croissant;
   h2{
     background-image: linear-gradient(to right, orange, rgb(112, 18, 252));
-    background-clip: text;
+    background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -169,14 +170,14 @@ i + p{
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3{
   background-image: linear-gradient(to right, rgb(5,5,254), rgb(163,163,254));
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .menu_la_palette_du_gout h2, .menu_la_palette_du_gout h3{
   background-image: linear-gradient(to right, rgb(61,147,57), rgb(191, 255, 126));
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }

@@ -140,7 +140,7 @@ header {
 header a {
   text-decoration: none;
   text-align: center;
-  color: #fdcb46;
+  color: black;
   font-size: 5em;
   margin: 0;
   width: 100%;
@@ -537,7 +537,7 @@ i + p {
 .menu_le_chic_a_la_francaise h2 {
   background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
   background-image: linear-gradient(to right, orange, #7012fc);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -558,7 +558,7 @@ i + p {
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3 {
   background-image: -webkit-gradient(linear, left top, right top, from(#0505fe), to(#a3a3fe));
   background-image: linear-gradient(to right, #0505fe, #a3a3fe);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -566,7 +566,7 @@ i + p {
 .menu_la_palette_du_gout h2, .menu_la_palette_du_gout h3 {
   background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(to right, #3d9339, #bfff7e);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
