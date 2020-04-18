@@ -1,5 +1,6 @@
-# Welcome to my CV 👋
-
+# Welcome to Ohmyfood Paris! 👋
+This work is from my computer science school 🏫 https://openclassrooms.com
+Any feedbacks are appreciated
 
 
 ### 🏠 [Homepage](https://github.com/AxelDevisse/ohmyfood)
