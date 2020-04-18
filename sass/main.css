@@ -256,7 +256,7 @@ main {
 }
 main h1 {
   text-align: center;
-  margin: 13%;
+  margin: 7%;
 }
 @media all and (max-width: 1280px) {
   main h1 {
