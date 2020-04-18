@@ -249,13 +249,18 @@ main {
   width: 70%;
   margin: auto;
 }
+@media all and (max-width: 1280px) {
+  main {
+    width: 100%;
+  }
+}
 main h1 {
   text-align: center;
   margin: 13%;
 }
 @media all and (max-width: 1280px) {
-  main {
-    width: 100%;
+  main h1 {
+    font-size: 1.4em;
   }
 }
 
@@ -436,6 +441,17 @@ i + p {
 
 .violet {
   color: #6e4ccc;
+}
+
+.legal_notice {
+  width: 80%;
+  margin: 0 auto;
+}
+.legal_notice p {
+  font-size: 0.7em;
+}
+.legal_notice h4 {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
