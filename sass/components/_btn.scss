@@ -9,6 +9,10 @@
   border-radius: 5px;
   justify-content: center;
   display: flex;
+  @media all and (max-width: 400px)
+  {
+    width: 75%;
+  }
   p{ 
     font-size: 1.5em;
     font-weight: bold;
