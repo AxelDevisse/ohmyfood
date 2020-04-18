@@ -3,7 +3,7 @@ This work is from my computer science school 🏫 https://openclassrooms.com
 Any feedbacks are appreciated
 
 
-### 🏠 [Homepage](https://github.com/AxelDevisse/ohmyfood)
+### 🏠 [Homepage](https://axeldevisse.github.io/ohmyfood/index.html)
 
 ## 🔨 Used in this project
 
