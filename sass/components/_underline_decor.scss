@@ -62,7 +62,6 @@
 .underline {
   text-decoration: none;
   color: black;
-  font-weight: bold;
   width: 100%;
   font-size: 1.2em;
 }
@@ -91,7 +90,7 @@
   background-color: black;
 }
 
-.underline:before {
+.underline::before{
   content: "";
   position: absolute;
   width: 0;

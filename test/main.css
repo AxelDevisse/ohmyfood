@@ -107,7 +107,6 @@ header {
 .underline {
   text-decoration: none;
   color: black;
-  font-weight: bold;
   width: 100%;
   font-size: 1.2em; }
 
@@ -129,7 +128,7 @@ header {
 .underline.black:before {
   background-color: black; }
 
-.underline:before {
+.underline::before {
   content: "";
   position: absolute;
   width: 0;
@@ -306,7 +305,8 @@ i + p {
   font-size: 1.5em; }
 
 .menu_le_chic_a_la_francaise {
-  font-family: "Croissant One", cursive; }
+  font-family: "Croissant One", cursive;
+  background-color: rgba(255, 228, 242, 0.7); }
   .menu_le_chic_a_la_francaise h2 {
     background-image: linear-gradient(to right, orange, #7012fc);
     background-clip: border-box;
@@ -320,6 +320,9 @@ i + p {
   font-family: "Dancing Script", cursive; }
   .menu_le_delice_des_papilles .menu_content_detail, .menu_la_palette_du_gout .menu_content_detail {
     font-family: "Caveat", cursive; }
+
+.menu_le_delice_des_papilles {
+  background-color: rgba(0, 0, 0, 0.04); }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3 {
   background-image: linear-gradient(to right, #0505fe, #a3a3fe);

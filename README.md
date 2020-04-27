@@ -10,6 +10,7 @@ Any feedbacks are appreciated
 * HTML5
 * CSS3/SCSS
 * GIT
+* GULP
 
 
 

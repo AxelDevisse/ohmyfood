@@ -157,6 +157,7 @@ i + p{
 
 .menu_le_chic_a_la_francaise{
   font-family: $croissant;
+  background-color: rgba(255, 228, 242, 0.7);
   h2{
     background-image: linear-gradient(to right, orange, rgb(112, 18, 252));
     background-clip: border-box;
@@ -174,6 +175,10 @@ i + p{
   .menu_content_detail{
     font-family: $caveat;
   }
+}
+
+.menu_le_delice_des_papilles{
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3{
@@ -202,6 +207,7 @@ i + p{
   color: $color-violet;
 }
 
+// Page mentions légales
 .legal_notice {
   width: 80%;
   margin: 0 auto;
