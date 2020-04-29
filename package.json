@@ -1,0 +1,36 @@
+{
+  "name": "p3.localhost",
+  "version": "1.0.0",
+  "description": "This work is from my computer science school 🏫 https://openclassrooms.com\r Any feedbacks are appreciated",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelDevisse/ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelDevisse/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/AxelDevisse/ohmyfood#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "browserslist": [
+    "defaults",
+    "> .5%",
+    "last 5 versions"
+  ],
+  "dependencies": {}
+}

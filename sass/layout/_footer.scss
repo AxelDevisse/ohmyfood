@@ -14,9 +14,7 @@ body>footer {
   text-align: center;
   @media all and (max-width: 400px){
     height: 70px;
-    font-size: 0.8em;
-  }
-
+    font-size: 0.8em;}
   a {
     color: $color-secondary;
     margin: auto;
@@ -29,7 +27,7 @@ footer a:hover {
   animation: shake 0.5s;
 }
 
-@keyframes shake { // Animation of the 3 dots of the button
+@keyframes shake { 
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
