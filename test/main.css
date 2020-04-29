@@ -2,11 +2,15 @@
   height: 160px; }
 
 body > footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   bottom: 0;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #579c87;
   height: 100px;
   font-weight: bold;
@@ -22,38 +26,89 @@ body > footer {
     text-decoration: none; }
 
 footer a:hover {
-  animation: shake 0.5s; }
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg); } }
 
 @keyframes shake {
   0% {
-    transform: translate(1px, 1px) rotate(0deg); }
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg); }
   10% {
-    transform: translate(-1px, -2px) rotate(-1deg); }
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg); }
   20% {
-    transform: translate(-3px, 0px) rotate(1deg); }
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg); }
   30% {
-    transform: translate(3px, 2px) rotate(0deg); }
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg); }
   40% {
-    transform: translate(1px, -1px) rotate(1deg); }
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg); }
   50% {
-    transform: translate(-1px, 2px) rotate(-1deg); }
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg); }
   60% {
-    transform: translate(-3px, 1px) rotate(0deg); }
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg); }
   70% {
-    transform: translate(3px, 1px) rotate(-1deg); }
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg); }
   80% {
-    transform: translate(-1px, -1px) rotate(1deg); }
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg); }
   90% {
-    transform: translate(1px, 2px) rotate(0deg); }
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg); }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg); } }
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg); } }
 
 header {
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 160px;
   background-color: #579c87;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   @media all and (max-width: 400px) {
     header {
@@ -70,6 +125,8 @@ header {
         font-size: 3em; } }
 
 .menu_content_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .menu_content_title .link-background {
     text-align: center;
@@ -137,6 +194,8 @@ header {
   left: 0;
   background-color: #3c1218;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .underline:hover:before {
@@ -150,9 +209,15 @@ header {
   color: #fdcb46;
   width: 300px;
   height: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   @media all and (max-width: 400px) {
     .btn {
@@ -163,13 +228,26 @@ header {
 
 .point {
   font-size: 1.5em;
-  animation: 2s linear infinite blink; }
+  -webkit-animation: 2s linear infinite blink;
+          animation: 2s linear infinite blink; }
 
 .point:nth-of-type(2) {
-  animation-delay: .2s; }
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s; }
 
 .point:nth-of-type(3) {
-  animation-delay: .4s; }
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes blink {
   0% {
@@ -203,10 +281,18 @@ main {
         font-size: 1.4em; } }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .container a {
     text-decoration: none;
     margin-top: 10%;
@@ -216,17 +302,29 @@ main {
         width: 75%; } }
   @media all and (max-width: 400px) {
     .container {
-      flex-direction: column; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .menu {
   height: 400px;
   width: 40%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  transform: scale(1);
-  box-shadow: 5px 5px 15px grey; }
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 5px 5px 15px grey;
+          box-shadow: 5px 5px 15px grey; }
   .menu:hover .menu_content {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.6; }
   @media all and (max-width: 560px) {
     .menu {
@@ -235,8 +333,12 @@ main {
 .menu_content {
   width: 100%;
   opacity: 1;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s; }
   .menu_content h3 {
     font-size: 2em; }
@@ -251,8 +353,13 @@ main {
 .menu_detail {
   width: 70%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto; }
   @media all and (max-width: 560px) {
     .menu_detail {
@@ -264,9 +371,15 @@ main {
   margin-bottom: 7%;
   font-family: "Roboto", sans-serif; }
   .menu_content_detail p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   @media all and (max-width: 560px) {
     .menu_content_detail {
       width: 90%; } }
@@ -275,9 +388,15 @@ main {
   padding-left: 5%; }
 
 .end_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: baseline; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
   .end_menu i {
     padding-right: 15px; }
 
@@ -295,6 +414,8 @@ main {
   width: 70%; }
 
 i {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d90f0f), to(#ffab2d));
+  background-image: -o-linear-gradient(left, #d90f0f, #ffab2d);
   background-image: linear-gradient(to right, #d90f0f, #ffab2d);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -308,6 +429,8 @@ i + p {
   font-family: "Croissant One", cursive;
   background-color: rgba(255, 228, 242, 0.7); }
   .menu_le_chic_a_la_francaise h2 {
+    background-image: -webkit-gradient(linear, left top, right top, from(orange), to(#7012fc));
+    background-image: -o-linear-gradient(left, orange, #7012fc);
     background-image: linear-gradient(to right, orange, #7012fc);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -325,12 +448,16 @@ i + p {
   background-color: rgba(0, 0, 0, 0.04); }
 
 .menu_le_delice_des_papilles h2, .menu_le_delice_des_papilles h3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0505fe), to(#a3a3fe));
+  background-image: -o-linear-gradient(left, #0505fe, #a3a3fe);
   background-image: linear-gradient(to right, #0505fe, #a3a3fe);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent; }
 
 .menu_la_palette_du_gout h2, .menu_la_palette_du_gout h3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background-image: -o-linear-gradient(left, #3d9339, #bfff7e);
   background-image: linear-gradient(to right, #3d9339, #bfff7e);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -353,5 +480,3 @@ i + p {
   .legal_notice h4 {
     text-decoration: underline;
     color: black; }
-
-/*# sourceMappingURL=style.css.map */
